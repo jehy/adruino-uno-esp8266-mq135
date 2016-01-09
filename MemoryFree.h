@@ -1,7 +1,15 @@
+#ifndef	MEMORY_FREE_H
+#define MEMORY_FREE_H
+
+#ifdef __cplusplus
 extern "C" {
-#include "user_interface.h"
+#endif
+
+int freeMemory();
+
+#ifdef  __cplusplus
 }
-uint32_t freemem()
-{
-return system_get_free_heap_size();
-}
+#endif
+
+#endif
+
